@@ -1,0 +1,67 @@
+body{
+    background-color :#303030;
+    color: #f4f4f4;
+    font-family: Arial Verdana sans-serif;
+    font-size:17px;
+    font-weight: normal;
+
+}
+
+h1,h2{
+    color : #80aaff;
+}
+
+.items li a {
+    color :red;
+}
+
+
+.container{
+    width : 70%;
+    margin:auto;
+}
+
+header {
+    text-align: center;
+}
+
+span{
+    color : yellow;
+}
+
+p::first-letter{
+    background-color : green;
+    color: white;
+    padding:10px;
+    border: 1px white solid;
+    font-size: 1.5em;
+    padding-bottom : 0px;
+    
+}
+
+a{
+    text-decoration :none;
+}
+
+.items li a:hover{
+    text-decoration :underline;
+}
+
+dt{
+    color : yellow;
+
+}
+
+.innerItems{
+    list-style:none;
+    padding-left:0px;
+}
+
+.innerItem2{
+    list-style:none;
+    padding-left:0px;
+    color: white;
+}
+
+
+
