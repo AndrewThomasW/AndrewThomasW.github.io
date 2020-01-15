@@ -3,6 +3,7 @@ body {
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, sans-serif;
+    
 }
 
 h1 {
@@ -28,6 +29,7 @@ pre {
 blockquote {
     font-style: italic;
     background: #ffff99;
+    
 
 }
 
@@ -35,6 +37,7 @@ blockquote {
     width: 75%;
     margin: auto;
     padding: 10px;
+    background-image: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg');
 }
 
 #header {
@@ -53,3 +56,8 @@ blockquote {
     list-style:none;
     padding:0px;
 }
+
+.footer{
+    text-align:right;
+}
+
