@@ -48,3 +48,8 @@ blockquote {
     font-size: 18pt;
     font-weight: normal;
 }
+
+#details{
+    list-style:none;
+    padding:0px;
+}
