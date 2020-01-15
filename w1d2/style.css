@@ -39,6 +39,10 @@ p::first-letter{
     
 }
 
+.dropcap ::first-line{
+    
+}
+
 a{
     text-decoration :none;
 }
