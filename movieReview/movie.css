@@ -51,8 +51,6 @@ body {
     grid-area: main
 }
 
-;
-
 .item5 {
     grid-area: footer
 }
@@ -113,7 +111,6 @@ body {
 #columns {
     column-count: 2;
     column-gap: 40px;
-    column-width: 47%;
     margin: 2%;
 }
 
