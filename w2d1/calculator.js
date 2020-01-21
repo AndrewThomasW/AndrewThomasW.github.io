@@ -6,10 +6,12 @@ console.log('assignment');
 const arr = [1, 2, 3, 4];
 const name = 'andrew';
 const words = ['andrew', 'jirom', 'walugembe', 'jimkatungukajirom'];
+const arraie = [1,2,3,4,5,6];
+const arrr = ['andrew', 'jim'];
 
 
 /* runs test to see if expected argument is === to value returned by function2test argument */
-describe('assignment', function () {
+describe('W1D5 Basic JavaScript', function () {
 
     it("Expected output of max(20,10) is 20", function () {
         assert.equal(max(20, 10), 20);
@@ -37,8 +39,23 @@ describe('assignment', function () {
         assert.equal(findLongestWord(words), 17);
     });
 
+});
+
+describe('my Map function', function () {
+    it("Expected output of myMap(arrr, slength) is [6,3]", function () {
+        assert.equal(myMap(arrr, slength).toString(), '6,3');
+    });
 
 });
+
+describe('my Filter function', function () {
+    it("Expected output of myfilter(arraie,filtie) is [4,5,6]", function () {
+        assert.equal(myfilter(arraie,filtie).toString(), '4,5,6');
+    });
+
+
+});
+
 
 
 /*  2   Define a function max() that takes two numbers as arguments and
@@ -162,7 +179,7 @@ function filterLongWords(longWords, i) {
 
 }
 
-const arrr = ['andrew', 'jim'];
+
 
 console.log(arrr);
 
@@ -209,13 +226,13 @@ const myfilter = function (theArray, theFunc) {
     return returnArray;
 }
 
-const arraie = [1,2,3,4,5,6];
+
 
 const  filtie =  function (y){
     return y > 3;
 }
 console.log(
-    myfilter(arraie,filtie)
+    myfilter(arraie,filtie).toString()
 
 );
 
