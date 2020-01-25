@@ -129,7 +129,7 @@
         'color':'brown'
     }
  
-    const user1 = user = {
+    const user1 = {
         'id': 1,
         'name':'andrew thomas',
         'age': 28,
