@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Basic Java Script</title>
-    <!-- This assignment is practising basic java script and how to interact with google chrome developer console  -->
-    <link href="inheritance.css" rel="stylesheet" type="text/css"/>
-    <script src="inheritance.js"></script>
+    <!-- add mocha css, to show results -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <!-- add mocha framework code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd'); // minimal setup
+    </script>
+    <!-- add chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+    </script>
 </head>
+
 <body>
-<div>
-    <p> Press option + command + J  to Look in the Chrome
-         developer console to see the output.</p>
-</div>
-<div id="validation">
-    <a href="https://validator.w3.org/check/referer">
-        <img alt="Validate" src="images/w3c-html.png"/>
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img alt="Valid CSS!" src="images/w3c-css.png"/>
-    </a>
-    <a href="https://webster.cs.washington.edu/jslint/?referer">
-        <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
-    </a>
-</div>
+    
+    <script src="inheritance.js">    </script>
+
+    <!-- the script with tests (describe, it...) -->
+    <!-- <script src="test.js"></script>
+<script src="calculatorTest.js"></script> -->
+
+    <!-- the element with id="mocha" will contain test results -->
+    <div id="mocha"></div>
+
+    <!-- run tests! -->
+    <div>
+        <p>Press CTRL + SHIFT + J to see Part I</p>
+    </div>
+    <script>
+        mocha.run();
+    </script>
 </body>
+
 </html>
