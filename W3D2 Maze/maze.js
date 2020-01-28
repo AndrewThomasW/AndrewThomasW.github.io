@@ -10,6 +10,7 @@ $(document).ready(()=>{
     $('div#start').on('click',()=>{
         hit = false;
         $('.boundary').removeClass('youlose');
+        $('h2#status').html('Click the "S" to begin.');
     });
 
     $('div#end').on('mouseenter',()=>{
