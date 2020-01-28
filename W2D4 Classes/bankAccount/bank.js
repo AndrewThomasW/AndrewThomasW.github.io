@@ -49,6 +49,12 @@ class Bank {
         return string;
     }
 
+    endOfMonth() {
+        this._accounts.forEach(account => {
+            console.log(account.endofMonth())
+        })
+    }
+
 
 }
 
