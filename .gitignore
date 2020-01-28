@@ -1,0 +1,33 @@
+
+*.js
+*.json
+*.md
+W2D4 Classes/bankAccount/node_modules/isarray/.npmignore
+*.1
+W2D4 Classes/bankAccount/node_modules/minimatch/LICENSE
+W2D4 Classes/bankAccount/node_modules/minimatch/LICENSE
+W2D4 Classes/bankAccount/node_modules/path-is-absolute/license
+*.yml
+*.yml
+W2D4 Classes/bankAccount/node_modules/string_decoder/LICENSE
+W2D4 Classes/bankAccount/node_modules/string_decoder/.npmignore
+*.md~
+W2D4 Classes/bankAccount/node_modules/readable-stream/.npmignore
+W2D4 Classes/bankAccount/node_modules/jslint/LICENSE
+*.example
+*.example
+*.html
+*.js~
+W2D4 Classes/bankAccount/node_modules/inherits/LICENSE
+W2D4 Classes/bankAccount/node_modules/inherits/LICENSE
+W2D4 Classes/bankAccount/node_modules/inflight/LICENSE
+W2D4 Classes/bankAccount/node_modules/inflight/LICENSE
+W2D4 Classes/bankAccount/node_modules/brace-expansion/LICENSE
+W2D4 Classes/bankAccount/node_modules/jslint/Makefile
+W2D4 Classes/bankAccount/node_modules/readable-stream/LICENSE
+W2D4 Classes/bankAccount/node_modules/util-deprecate/LICENSE
+*.cmd
+W2D4 Classes/bankAccount/node_modules/wrappy/LICENSE
+*.json
+*.json
+W2D4 Classes/bankAccount/package.json
