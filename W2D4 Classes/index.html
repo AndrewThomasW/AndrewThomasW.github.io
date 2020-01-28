@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <style>
+        p#starty {
+            padding: 30px;
+            color: white;
+            background-color: purple;
+            border: 3px #ff6743 solid;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <div>
+            <p id='starty'> Rewrite in classes | <br> press CTR + SHIFT + J to view clock stop after 10 ticks in the console</p>
+            <p>
+                <dl>
+                    <dt>What is the inner function of the constructor function?</dt>
+                    <dd>render function</dd>
+                    <dd>stop function</dd>
+                    <dd>start function</dd>
+                </dl>
+                <dl>
+                    <dt>What is the local variable of the constructor function?</dt>
+                    <dd>template</dd>
+                    <dd>timer</dd>
+                </dl>
+
+                <dl>
+                    <dt>What is the clock “interface” returned by the constructor function?</dt>
+                    <dd>start function</dd>
+                </dl>
+
+                <dl>
+                    <dt>What are the closures?</dt>
+                    <dd>start function</dd>
+                </dl>
+
+                <dl>
+                    <dt>What are the private variables and functions?</dt>
+                    <dd>timer(variable)</dd>
+                    <dd>template(variable)</dd>
+                    <dd>render(function)</dd>
+                    <dd>timer(function)</dd>
+                    <dd>stop(function)</dd>
+                </dl>
+
+                <dl>
+                    <dt>What are the public methods?</dt>
+                    <dd>start function</dd>
+                </dl>
+
+                <dl>
+                    <dt>How does this example illustrate that a JavaScript class is really a function and not an object?</dt>
+                    <dd></dd>
+                </dl>
+                
+
+                
+            </p>
+            </p>
+        </div>
+    </div>
+
+</body>
+<script>
+    class Clock {
+        //constructor
+        constructor({ template }) {
+            this.template = template;
+        }
+
+        //render method    
+        render() {
+            let date = new Date();
+
+            let hours = date.getHours();
+            if (hours < 10) hours = '0' + hours;
+
+            let mins = date.getMinutes();
+            if (mins < 10) mins = '0' + mins;
+
+            let secs = date.getSeconds();
+            if (secs < 10) secs = '0' + secs;
+
+            let output = this.template
+                .replace('h', hours)
+                .replace('m', mins)
+                .replace('s', secs);
+
+            console.log(output);
+        }
+
+        // stop method
+        stop() {
+            clearInterval(this.timer);
+        };
+
+        //start method
+        start() {
+            let timeRun = 0;
+            this.render();
+            this.timer = setInterval(() => {
+                timeRun += 1;
+                if (timeRun === 9) { this.stop() };
+                this.render();
+
+
+            }, 1000);
+
+        };
+
+    }
+
+    let clock = new Clock({ template: 'h:m:s' });
+    clock.start();
+
+</script>
+
+</html>
